@@ -88,6 +88,7 @@ lazy_static! {
         m.insert("PKGBUILD", '\u{f303}'); // 
         m.insert("rubydoc", '\u{e73b}'); // 
         m.insert("yarn.lock", '\u{e718}'); // 
+        m.insert("LICENCE", '\u{e60a}'); // 
 
         m
     };
