@@ -52,12 +52,12 @@ lazy_static! {
         m.insert(".atom", '\u{e764}'); // 
         m.insert(".bashprofile", '\u{e615}'); // 
         m.insert(".bashrc", '\u{f489}'); // 
-        m.insert(".git", '\u{f1d3}'); // 
-        m.insert(".gitattributes", '\u{f1d3}'); // 
-        m.insert(".gitconfig", '\u{f1d3}'); // 
+        m.insert(".git", '\u{f7a1}'); // 
+        m.insert(".gitattributes", '\u{f7a1}'); // 
+        m.insert(".gitconfig", '\u{f7a1}'); // 
         m.insert(".github", '\u{f408}'); // 
-        m.insert(".gitignore", '\u{f1d3}'); // 
-        m.insert(".gitmodules", '\u{f1d3}'); // 
+        m.insert(".gitignore", '\u{f7a1}'); // 
+        m.insert(".gitmodules", '\u{f7a1}'); // 
         m.insert(".rvm", '\u{e21e}'); // 
         m.insert(".vimrc", '\u{e62b}'); // 
         m.insert(".vscode", '\u{e70c}'); // 
@@ -68,7 +68,7 @@ lazy_static! {
         m.insert("docker-compose.yml", '\u{f308}'); // 
         m.insert("Dockerfile", '\u{f308}'); // 
         m.insert("ds_store", '\u{f179}'); // 
-        m.insert("gitignore_global", '\u{f1d3}'); // 
+        m.insert("gitignore_global", '\u{f7a1}'); // 
         m.insert("go.mod", '\u{e626}'); // 
         m.insert("go.sum", '\u{e626}'); // 
         m.insert("gradle", '\u{e256}'); // 
@@ -101,9 +101,9 @@ pub fn icon_for_file(file: &File<'_>) -> char {
     else if file.points_to_directory() {
         match file.name.as_str() {
             "bin"           => '\u{e5fc}', // 
-            ".git"          => '\u{f1d3}', // 
+            ".git"          => '\u{f7a1}', // 
             ".idea"         => '\u{e7b5}', // 
-            _               => '\u{f115}'  // 
+            _               => '\u{f74a}'  // 
         }
     }
     else if let Some(icon) = extensions.icon_file(file) { icon }
@@ -187,10 +187,10 @@ pub fn icon_for_file(file: &File<'_>) -> char {
             "gemspec"       => '\u{e21e}', // 
             "gform"         => '\u{f298}', // 
             "gif"           => '\u{f1c5}', // 
-            "git"           => '\u{f1d3}', // 
-            "gitattributes" => '\u{f1d3}', // 
-            "gitignore"     => '\u{f1d3}', // 
-            "gitmodules"    => '\u{f1d3}', // 
+            "git"           => '\u{f7a1}', // 
+            "gitattributes" => '\u{f7a1}', // 
+            "gitignore"     => '\u{f7a1}', // 
+            "gitmodules"    => '\u{f7a1}', // 
             "go"            => '\u{e626}', // 
             "gradle"        => '\u{e256}', // 
             "groovy"        => '\u{e775}', // 
